@@ -1,5 +1,7 @@
 export type Locale = "pt" | "en";
 
+export const CONTACT_EMAIL = "clubededescontos.app@gmail.com";
+
 export interface PolicySection {
   title: string;
   body: string;
@@ -36,11 +38,15 @@ export const policy: Record<Locale, PolicyContent> = {
       },
       {
         title: "Senha e segurança",
-        body: "Sua senha não é armazenada em texto puro. Utilizamos criptografia (hashing) para guardar apenas um valor derivado da sua senha, de forma que não seja possível recuperá-la. Recomendamos uma senha forte, com letras, números e caracteres especiais, e que você não a compartilhe com terceiros.",
+        body: "Sua senha não é armazenada em texto puro. Utilizamos criptografia (hashing) para guardar apenas um valor derivado da sua senha, de forma que não seja possível recuperá-la — ou seja, há exclusão de senhas em formato legível: nós não guardamos a senha em si. Recomendamos uma senha forte, com letras, números e caracteres especiais, e que você não a compartilhe com terceiros. Para solicitar exclusão da sua conta, dos dados associados ou qualquer questão sobre seus dados de acesso, entre em contato conosco pelo e-mail " + CONTACT_EMAIL + ".",
       },
       {
         title: "Alterações",
         body: "Estes termos e a política de privacidade podem ser atualizados. Em caso de mudanças relevantes, você será informado pelo app ou por e-mail. O uso continuado do aplicativo após as alterações constitui aceitação das novas condições.",
+      },
+      {
+        title: "Contato",
+        body: "Para dúvidas sobre privacidade, exercício dos seus direitos ou quaisquer questões relacionadas a estes termos, entre em contato conosco pelo e-mail: " + CONTACT_EMAIL + ".",
       },
     ],
   },
@@ -69,11 +75,15 @@ export const policy: Record<Locale, PolicyContent> = {
       },
       {
         title: "Password and security",
-        body: "Your password is not stored in plain text. We use encryption (hashing) to store only a value derived from your password, so that it cannot be recovered. We recommend a strong password with letters, numbers, and special characters, and that you do not share it with third parties.",
+        body: "Your password is not stored in plain text. We use encryption (hashing) to store only a value derived from your password, so that it cannot be recovered — i.e., there is exclusion of passwords in readable form: we do not store the password itself. We recommend a strong password with letters, numbers, and special characters, and that you do not share it with third parties. To request deletion of your account, associated data, or any matter regarding your access data, contact us at " + CONTACT_EMAIL + ".",
       },
       {
         title: "Changes",
         body: "These terms and the privacy policy may be updated. In the event of material changes, you will be informed via the app or by email. Continued use of the application after changes constitutes acceptance of the new conditions.",
+      },
+      {
+        title: "Contact",
+        body: "For questions about privacy, exercising your rights, or any matters related to these terms, contact us at: " + CONTACT_EMAIL + ".",
       },
     ],
   },

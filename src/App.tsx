@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { policy, type Locale } from "./content/policy";
+import { policy, CONTACT_EMAIL, type Locale } from "./content/policy";
 
 function App() {
   const [locale, setLocale] = useState<Locale>("pt");
@@ -65,6 +65,17 @@ function App() {
           </div>
         </div>
       </main>
+      <footer className="border-t border-border bg-card px-4 py-4">
+        <div className="mx-auto max-w-2xl text-center text-sm text-muted-foreground">
+          {locale === "pt" ? "Contato: " : "Contact: "}
+          <a
+            href={`mailto:${CONTACT_EMAIL}`}
+            className="text-primary underline underline-offset-2 hover:no-underline"
+          >
+            {CONTACT_EMAIL}
+          </a>
+        </div>
+      </footer>
     </div>
   );
 }
