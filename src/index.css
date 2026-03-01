@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 200 30% 98%;
+    --foreground: 200 100% 15%;
+    --card: 0 0% 100%;
+    --card-foreground: 200 100% 15%;
+    --primary: 200 100% 17%;
+    --primary-foreground: 200 30% 98%;
+    --secondary: 200 60% 92%;
+    --secondary-foreground: 200 100% 17%;
+    --muted: 200 30% 95%;
+    --muted-foreground: 200 30% 40%;
+    --accent: 197 65% 58%;
+    --accent-foreground: 200 100% 15%;
+    --border: 200 30% 88%;
+    --input: 200 30% 88%;
+    --ring: 200 100% 17%;
+    --radius: 1rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-family: Inter, system-ui, sans-serif;
+  }
+}
